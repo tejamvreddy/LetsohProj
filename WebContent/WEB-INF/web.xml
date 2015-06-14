@@ -13,10 +13,14 @@
         <servlet-name>letsoh-dispatcher</servlet-name>
         <url-pattern>*.htm</url-pattern>
     </servlet-mapping>
- 
+ <listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
   	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/letsoh-dispatcher-servlet.xml</param-value>
+		<param-value>
+		/WEB-INF/spring-database.xml,/WEB-INF/letsoh-dispatcher-servlet.xml
+		</param-value>
 	</context-param>
   	
   	 <welcome-file-list>
