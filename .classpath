@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7">
 		<attributes>
 			<attribute name="owner.project.facets" value="java"/>
@@ -13,17 +14,22 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="D:/softwares_31_5/Spring jars/javax.servlet-2.5.0.jar"/>
-	<classpathentry kind="lib" path="D:/softwares_31_5/Spring jars/spring-2.5.4.jar"/>
-	<classpathentry kind="lib" path="D:/softwares_31_5/Spring jars/spring-context-2.5.4.jar"/>
-	<classpathentry kind="lib" path="D:/softwares_31_5/Spring jars/spring-core-2.5.4.jar"/>
-	<classpathentry kind="lib" path="D:/softwares_31_5/Spring jars/spring-hibernate2-2.0.8.jar"/>
-	<classpathentry kind="lib" path="D:/softwares_31_5/Spring jars/spring-hibernate3-2.0.8.jar"/>
-	<classpathentry kind="lib" path="D:/softwares_31_5/Spring jars/spring-jdbc-2.5.4.jar"/>
-	<classpathentry kind="lib" path="D:/softwares_31_5/Spring jars/spring-orm-2.5.4.jar"/>
-	<classpathentry kind="lib" path="D:/softwares_31_5/Spring jars/spring-web-2.5.4.jar"/>
-	<classpathentry kind="lib" path="D:/softwares_31_5/Spring jars/spring-webmvc-2.5.4.jar"/>
-	<classpathentry kind="lib" path="D:/softwares_31_5/Spring jars/spring-webmvc-struts-2.5.4.jar"/>
-	<classpathentry kind="lib" path="F:/Library for Java/Struts jars/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/Letsoh/letsohProj/WebContent/WEB-INF/lib/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="D:/Letsoh/letsohProj/WebContent/WEB-INF/lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/Letsoh/letsohProj/WebContent/WEB-INF/lib/javax.servlet-2.5.0.jar"/>
+	<classpathentry kind="lib" path="D:/Letsoh/letsohProj/WebContent/WEB-INF/lib/mysql-connector-java.jar"/>
+	<classpathentry kind="lib" path="D:/Letsoh/letsohProj/WebContent/WEB-INF/lib/org.apache.commons.pool.jar"/>
+	<classpathentry kind="lib" path="D:/Letsoh/letsohProj/WebContent/WEB-INF/lib/spring-2.5.4.jar"/>
+	<classpathentry kind="lib" path="D:/Letsoh/letsohProj/WebContent/WEB-INF/lib/spring-aop-2.5.4.jar"/>
+	<classpathentry kind="lib" path="D:/Letsoh/letsohProj/WebContent/WEB-INF/lib/spring-aspects-2.5.4.jar"/>
+	<classpathentry kind="lib" path="D:/Letsoh/letsohProj/WebContent/WEB-INF/lib/spring-context-2.5.4.jar"/>
+	<classpathentry kind="lib" path="D:/Letsoh/letsohProj/WebContent/WEB-INF/lib/spring-core-2.5.4.jar"/>
+	<classpathentry kind="lib" path="D:/Letsoh/letsohProj/WebContent/WEB-INF/lib/spring-jdbc-2.5.4.jar"/>
+	<classpathentry kind="lib" path="D:/Letsoh/letsohProj/WebContent/WEB-INF/lib/spring-orm-2.5.4.jar"/>
+	<classpathentry kind="lib" path="D:/Letsoh/letsohProj/WebContent/WEB-INF/lib/spring-web-2.5.4.jar"/>
+	<classpathentry kind="lib" path="D:/Letsoh/letsohProj/WebContent/WEB-INF/lib/spring-webmvc-2.5.4.jar"/>
+	<classpathentry kind="lib" path="D:/Letsoh/letsohProj/WebContent/WEB-INF/lib/spring-webmvc-struts-2.5.4.jar"/>
+	<classpathentry kind="lib" path="D:/Letsoh/letsohProj/WebContent/WEB-INF/lib/hibernate-core.jar"/>
+	<classpathentry kind="lib" path="D:/Letsoh/letsohProj/WebContent/WEB-INF/lib/apache-logging-log4j.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
