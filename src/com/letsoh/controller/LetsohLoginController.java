@@ -1,35 +1,28 @@
 package com.letsoh.controller;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.AbstractController;
 
 import com.letsoh.service.LetsohUserService;
-import com.letsoh.service.impl.LetsohUserServiceImpl;
+@Controller
 
-public class LetsohLoginController extends AbstractController{
+public class LetsohLoginController {
 	
 	private LetsohUserService letsohUserService;
 	private static final Logger logger = Logger.getLogger(LetsohLoginController.class);
 	
-	@Override
-	protected ModelAndView handleRequestInternal(HttpServletRequest request,
-			HttpServletResponse response) throws Exception {
-		logger.info("Inside handleRequestInternal :: LetsohLoginController");
-		try {
-			letsohUserService.getAllUsers();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		ModelAndView model = new ModelAndView("examples/login");
-		model.addObject("msg", "Login there Git !!!");
-
-		return model;
-	}
+	 @RequestMapping(value="/login.htm", method=RequestMethod.POST)
+	    public ModelAndView getLoginPage() {
+		 logger.info("logged in as");
+	        ModelAndView mav = new ModelAndView("examples/login");
+	        System.out.println("After Model Obj");
+	        
+	        return mav;
+	    }
+	
 
 	
 	public LetsohUserService getLetsohUserService() {
