@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>LetsoH| Welcome</title>
+    <title>LetsoH|Welcome</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.4 -->
@@ -20,7 +20,7 @@
   <body class="lockscreen">
     <!-- Automatic element centering -->
     <div class="lockscreen-wrapper">
-      <div class="lockscreen-logo" style="font-weight:600;">
+      <div class="lockscreen-logo" style="font-weight:600;font-size:20px">
         <a href="index2.html"><b>LetsoH</b></a>
       </div>
       <br/>
@@ -42,11 +42,11 @@
      <br/>
      <br/>
       <div class='text-center'>
-        <a href="login.html">Admin</a>&nbsp;&nbsp;
-        <a href="login.html">User</a>
+        Admin&nbsp;&nbsp;User
       </div>
+      <div id="loginid"></div>
       <div class='lockscreen-footer text-center'>
-        Copyright &copy; 2015-2016 <b><a href="http://almsaeedstudio.com" class='text-black'>LetsoH Lab</a></b><br>
+        Copyright &copy; 2015-2016 <b><a href="#" class='text-black'>LetsoH Lab</a></b><br>
         All rights reserved
       </div>
     </div><!-- /.center -->
@@ -63,9 +63,8 @@
     $.ajax({  
      type : "Post",   
      url : "./login.htm", 
-     dataType:'html',
-      success : function(html) {  
-      login.html  
+      success : function(response) {  
+      $("#loginid").html(response); 
      },  
      error : function(e) {  
       alert('Error: ' + e);   
