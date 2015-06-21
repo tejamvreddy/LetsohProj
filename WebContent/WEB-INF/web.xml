@@ -29,7 +29,7 @@
   	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-		/WEB-INF/letsoh-dispatcher-servlet.xml
+		/WEB-INF/spring-database.xml,/WEB-INF/letsoh-dispatcher-servlet.xml
 		</param-value>
 	</context-param>
   	

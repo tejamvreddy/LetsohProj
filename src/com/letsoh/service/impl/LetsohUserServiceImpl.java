@@ -3,6 +3,7 @@ package com.letsoh.service.impl;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.letsoh.dao.LetsohUserDAO;
 import com.letsoh.model.LetsohUser;
@@ -14,6 +15,7 @@ public class LetsohUserServiceImpl implements LetsohUserService{
 	public LetsohUserDAO letsohUserDao;
 	
 	@Override
+	@Transactional
 	public List<LetsohUser> getAllUsers() {
 		System.out.println("inside Serverice :: getAllusers Meth");
 		

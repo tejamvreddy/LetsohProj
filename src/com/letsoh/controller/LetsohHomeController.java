@@ -15,26 +15,18 @@ public class LetsohHomeController {
 	private LetsohUserService letsohUserService;
 	private static final Logger logger = Logger.getLogger(LetsohHomeController.class);
 	
-	/*@Override
-	protected ModelAndView handleRequestInternal(HttpServletRequest request,
-			HttpServletResponse response) throws Exception {
-		
-		logger.info("Inside handleRequestInternal :: LetsohHomeController");
-		try {
-			letsohUserService.getAllUsers();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		ModelAndView model = new ModelAndView("letsohHome");
-		model.addObject("msg", "Wiht Git!!!");
-
-		return model;
-	}*/
+	
 
 	@RequestMapping("/letsohHome.htm")
 	public ModelAndView testMethod(){
 		logger.info("Inside testMethod -> Request Mappng Success");
+		try{
+		letsohUserService.getAllUsers();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
 		return new ModelAndView("letsohHome");
 	}
 	
