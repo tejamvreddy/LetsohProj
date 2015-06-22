@@ -61,10 +61,13 @@
       <script>  
    function callLogin() {  
     $.ajax({  
-     type : "Post",   
+     type : "get",   
      url : "./login.htm", 
       success : function(response) {  
-      $("#loginid").html(response); 
+    	  alert("response" + response);
+      //$("#loginid").html(response);
+    	  //window.location.href = "/login.htm";
+    	  $(location).attr('href',"/LetsohProj/login.htm");  
      },  
      error : function(e) {  
       alert('Error: ' + e);   

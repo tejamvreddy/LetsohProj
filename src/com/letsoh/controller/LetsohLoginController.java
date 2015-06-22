@@ -14,7 +14,7 @@ public class LetsohLoginController {
 	private LetsohUserService letsohUserService;
 	private static final Logger logger = Logger.getLogger(LetsohLoginController.class);
 	
-	 @RequestMapping(value="/login.htm", method=RequestMethod.POST)
+	 @RequestMapping(value="/login.htm", method=RequestMethod.GET)
 	    public ModelAndView getLoginPage() {
 		 logger.info("logged in as");
 	        ModelAndView mav = new ModelAndView("examples/login");
